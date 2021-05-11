@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+body {
+	background-color: black;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lora', serif;
+}
+
+#startPageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+#title {
+	color: #c97806;
+	font-size: 5vh;
+	margin-bottom: 0;
+}
+
+#startPageDesc {
+	color: #c97806;
+	font-size: 2vh;
+}
+
+#startBtn {
+	background-color: black;
+	border: solid 2px #c97806;
+    color: #c97806;
+	font-size: 3vh;
+	border-radius: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#startBtn:hover {
+	background-color: #361f01;
+}
+
+.bar {
+	overflow-y: scroll;
+	scrollbar-width: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	width: 15%;
+	min-height: 100vh;
+	background-color: #361f01;
+	border-right: solid 2px #784502;
+}
+
+#interfaceContainer {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#contentContainer {
+	overflow-y: scroll;
+	margin-top: 0;
+	margin-left: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.barButtons {
+	width: 75%;
+	background-color: #361f01;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	border-bottom: solid 8px #784502;
+	color: #784502;
+	font-size: 3vh;
+}
+
+.barButtons:hover {
+	width: 85%;
+	color: #c77100;
+}
+
+#recentTasksButton {
+	margin-top: 50%;
+}
+
+#emptyProject {
+	margin-top: 2%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	width: 95%;
+	border-bottom: solid 5px white;
+	border-radius: 7px;
+}
+
+#emptyProjectAfter {
+	margin-top: 2%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 95%;
+	border-bottom: none;
+}
+
+#addProjectBtn {
+	font-size: 2.5vh;
+	background-color: black;
+	border: none;
+	color: white;
+}
+
+#addProjectBtn:hover, #addNewProjectBtn:hover {
+	font-size: 3vh;
+	color: #c77100;
+}
+
+.projectHolder {
+	margin-left: 1%;
+	margin-bottom: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-end;
+	width: 97%;
+	height: 100%;
+}
+
+#projects {
+	margin-top: 2%;
+	border-bottom: solid 3px white;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	flex-direction: row;
+	width: 95%;
+}
+
+.hideTasks {
+	margin-left: auto;
+	margin-bottom: 5px;
+	font-size: 2vh;
+	background-color: black;
+	color: grey;
+	border: none;
+	
+}
+
+.hideTasks:hover {
+	font-size: 2.5vh;
+	color: white;
+}
+
+.removeProject {
+	margin-right: 1%;
+	margin-bottom: 5px;
+	background-color: black;
+	border: none;
+	color: red;
+	font-size: 2vh;
+}
+
+.removeProject:hover {
+	font-size: 2.5vh;
+}
+
+
+.labels {
+	margin-right: 1%;
+	margin-bottom: 0;
+	color: white;
+	font-size: 2vh;
+}
+
+.projectInputs {
+	background-color: black;
+	border-radius: 30px;
+	padding: 0 10px;
+	border: solid 5px white;
+	color: white;
+	outline: none;
+	margin-right: 1%;
+	margin-bottom: 5px;
+	width: 30vh;
+	height: 3vh;
+	font-size: 1.5vh;
+}
+
+#addTaskHolder {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#infoInput {
+	font-size: 1.5vh;
+
+}
+
+
+#addNewProjectBtn {
+	margin-bottom: 5px;
+	font-size: 2.5vh;
+	color: white;
+	border: none;
+	background-color: black;
+}
+
+.projectHeadings {
+	margin-left: 1%;
+	margin-bottom: 0;
+	color: white;
+	font-size: 2vh;
+}
+
+
+.addTaskBtn {
+	border-radius: 40px;
+	border: solid 3px white;
+	margin-left: 1%;
+	margin-bottom: 5px;
+	color: white;
+	font-size: 2vh;
+	background-color: black;
+}
+
+.tasksInProjects {
+	width: 95%;
+	height: auto;
+}
+
+.taskInputs {
+	outline: none;
+	width: 15vh;
+	height: 2.5vh;
+	border-radius: 10px;
+	font-size: 1.5vh;
+}
+
+#taskInfoInput {
+	outline: none;
+	font-size: 1.5vh;
+	width: 100%;
+	height: 6vh;
+	border-radius: 10px;
+}
+
+#taskActiveBtn {
+	background-color: red;
+	font-size: 1.5vh;
+	width: 10vh;
+	border: none;
+	border-radius: 15px;
+}
+
+#taskActiveSwitch {
+	margin-left: 6px;
+	margin-top: 4px;
+	position: absolute;
+	background-color: red;
+	font-size: 1.5vh;
+	height: 1vh;
+	width: 1vh;
+	border: none;
+	border-radius: 100px;
+}
+
+#addNewTaskBtn {
+	margin-top: 2%;
+	font-size: 2vh;
+	height: 3vh;
+	width: 3.5vh;
+	text-align: center;
+	color: white;
+	background-color: black;
+	border-radius: 30px;
+}
+
+.taskAll {
+	height: auto;
+	width: 95%;
+}
+
+.taskContainer {
+	position: relative;
+	margin-top: 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	word-wrap: break-word;
+	width: 100%;
+	height: auto;
+	border: solid 5px white;
+	border-radius: 25px;
+}
+
+.strike {
+	margin-left: 10px;
+	position: absolute;
+	height: 2px;
+	background-color: white;
+	top: 50%;
+	width: 76%;
+
+}
+
+.taskListed {
+	color: white;
+	font-size: 1.2vh;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 100%;
+}
+
+.removeTask {
+	margin: auto 20px auto 0;
+	color: red;
+	background-color: black;
+	border: none;
+	font-size: 1.5vh;
+}
+
+.removeTask:hover {
+	font-size: 2vh;
+}
+
+.editTask {
+	margin: auto 20px auto 0;
+	color: white;
+	background-color: black;
+	font-size: 1.5vh;
+}
+
+#showMoreBtn {
+	margin-left: 5px;
+	font-size: 1.5vh;
+	background-color: black;
+	color: white;
+}
+
+#showMore {
+	top: 30%;
+	bottom: 0;
+	left: 25%;
+	position: absolute;
+	background-color: black;
+	width: 50%;
+	height: 10vh;
+	word-wrap: break-word;
+	border: solid 2px white;
+}
