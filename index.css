@@ -268,8 +268,7 @@ body {
 }
 
 #taskActiveSwitch {
-	margin-left: 6px;
-	margin-top: 4px;
+	margin: 5px 5px auto 5px;
 	position: absolute;
 	background-color: red;
 	font-size: 1.5vh;
@@ -301,7 +300,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	word-wrap: break-word;
 	width: 100%;
 	height: auto;
@@ -340,9 +339,26 @@ body {
 }
 
 .editTask {
+	margin-top: 5px;
+	color: white;
+	background-image: url('images/edit.jpeg');
+	background-size: contain;
+	background-color: black;
+	background-repeat: no-repeat;
+	width: 8vh;
+	height: 3.5vh;
+	border: none;
+}
+
+.editTask:hover {
+	background-color: white;
+}
+
+.applyChanges {
 	margin: auto 20px auto 0;
 	color: white;
 	background-color: black;
+	background-repeat: no-repeat;
 	font-size: 1.5vh;
 }
 
