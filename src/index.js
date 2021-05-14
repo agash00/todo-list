@@ -1,0 +1,1 @@
+import startPage from './modules/start';
